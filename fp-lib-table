@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name kimchi_ulid)(type KiCad)(uri ${KIPRJMOD}/kimchi_ulid.pretty)(options "")(descr ""))
+  (lib (name gps)(type KiCad)(uri ${KIPRJMOD}/gps.pretty)(options "")(descr ""))
 )

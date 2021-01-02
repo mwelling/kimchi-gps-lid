@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:kimchi_ulid-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr USLedger 17000 11000
 encoding utf-8
@@ -17,7 +16,7 @@ $EndDescr
 Wire Wire Line
 	1500 1000 1500 1250
 $Comp
-L power:GND #PWR0226
+L kimchi-gps-lid-rescue:GND-power #PWR0226
 U 1 1 5D90F565
 P 1500 2000
 F 0 "#PWR0226" H 1500 1750 50  0001 C CNN
@@ -30,7 +29,7 @@ $EndComp
 Wire Wire Line
 	1500 2000 1500 1850
 $Comp
-L power:GND #PWR0227
+L kimchi-gps-lid-rescue:GND-power #PWR0227
 U 1 1 5D93779A
 P 2000 2000
 F 0 "#PWR0227" H 2000 1750 50  0001 C CNN
@@ -49,7 +48,7 @@ Wire Wire Line
 Wire Wire Line
 	2100 1450 1900 1450
 $Comp
-L Memory_EEPROM:24LC16 U1
+L kimchi-gps-lid-rescue:24LC16-Memory_EEPROM U1
 U 1 1 5D8EE848
 P 1500 1550
 F 0 "U1" H 1500 2031 50  0000 C CNN
@@ -83,7 +82,7 @@ Connection ~ 1050 1450
 Wire Wire Line
 	1050 1450 1050 1550
 $Comp
-L Graphic:Logo_Open_Hardware_Small LOGO1
+L kimchi-gps-lid-rescue:Logo_Open_Hardware_Small-Graphic LOGO1
 U 1 1 5EA00236
 P 12000 10300
 F 0 "LOGO1" H 12000 10575 50  0001 C CNN
@@ -94,7 +93,7 @@ F 3 "~" H 12000 10300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x30_Counter_Clockwise J2
+L kimchi-gps-lid-rescue:Conn_02x30_Counter_Clockwise-Connector_Generic J2
 U 1 1 5E5E151A
 P 9650 2650
 AR Path="/5E5E151A" Ref="J2"  Part="1" 
@@ -231,7 +230,7 @@ UIM_PWR
 Text GLabel 7350 2050 2    50   Input ~ 0
 UIM_VPP
 $Comp
-L power:GND #PWR0101
+L kimchi-gps-lid-rescue:GND-power #PWR0101
 U 1 1 5E5E155E
 P 7900 2250
 F 0 "#PWR0101" H 7900 2000 50  0001 C CNN
@@ -246,7 +245,7 @@ Wire Wire Line
 Wire Wire Line
 	7900 2150 7350 2150
 $Comp
-L kimchi_ulid:VDD_5V #PWR0102
+L kimchi-gps-lid-rescue:VDD_5V-kimchi_ulid #PWR0102
 U 1 1 5E5E1566
 P 5800 1850
 F 0 "#PWR0102" H 5800 1700 50  0001 C CNN
@@ -266,7 +265,7 @@ Connection ~ 5800 1950
 Wire Wire Line
 	5800 1950 5800 1850
 $Comp
-L power:GND #PWR0103
+L kimchi-gps-lid-rescue:GND-power #PWR0103
 U 1 1 5E5E1572
 P 5800 2550
 F 0 "#PWR0103" H 5800 2300 50  0001 C CNN
@@ -286,7 +285,7 @@ Wire Wire Line
 	5800 2250 5800 2350
 Connection ~ 5800 2350
 $Comp
-L kimchi_ulid:VDD_1V8 #PWR0104
+L kimchi-gps-lid-rescue:VDD_1V8-kimchi_ulid #PWR0104
 U 1 1 5E5E157E
 P 10800 2750
 F 0 "#PWR0104" H 10800 2600 50  0001 C CNN
@@ -328,7 +327,7 @@ GPIO1[14]
 Text GLabel 9450 3350 0    50   Input ~ 0
 GPIO1[15]
 $Comp
-L power:GND #PWR0105
+L kimchi-gps-lid-rescue:GND-power #PWR0105
 U 1 1 5E5E1594
 P 10800 3450
 F 0 "#PWR0105" H 10800 3200 50  0001 C CNN
@@ -350,7 +349,7 @@ Connection ~ 10800 3250
 Wire Wire Line
 	10800 3250 10800 3350
 $Comp
-L kimchi_ulid:VDD_3V3 #PWR0106
+L kimchi-gps-lid-rescue:VDD_3V3-kimchi_ulid #PWR0106
 U 1 1 5E5E15A0
 P 10800 1550
 F 0 "#PWR0106" H 10800 1400 50  0001 C CNN
@@ -373,7 +372,7 @@ Wire Wire Line
 	10800 1750 10800 1650
 Connection ~ 10800 1650
 $Comp
-L power:GND #PWR0107
+L kimchi-gps-lid-rescue:GND-power #PWR0107
 U 1 1 5E5E15AD
 P 10800 2250
 F 0 "#PWR0107" H 10800 2000 50  0001 C CNN
@@ -536,7 +535,7 @@ Wire Wire Line
 Wire Wire Line
 	6850 2550 5800 2550
 $Comp
-L Connector_Generic:Conn_02x30_Counter_Clockwise J1
+L kimchi-gps-lid-rescue:Conn_02x30_Counter_Clockwise-Connector_Generic J1
 U 1 1 5E5E1603
 P 7050 2650
 AR Path="/5E5E1603" Ref="J1"  Part="1" 
@@ -549,7 +548,7 @@ F 3 "~" H 7050 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG0101
+L kimchi-gps-lid-rescue:PWR_FLAG-power #FLG0101
 U 1 1 5E5F10BC
 P 5400 1850
 F 0 "#FLG0101" H 5400 1925 50  0001 C CNN
@@ -562,7 +561,7 @@ $EndComp
 Wire Wire Line
 	5400 1850 5800 1850
 $Comp
-L power:PWR_FLAG #FLG0102
+L kimchi-gps-lid-rescue:PWR_FLAG-power #FLG0102
 U 1 1 5E5F3411
 P 11250 1550
 F 0 "#FLG0102" H 11250 1625 50  0001 C CNN
@@ -575,7 +574,7 @@ $EndComp
 Wire Wire Line
 	11250 1550 10800 1550
 $Comp
-L power:PWR_FLAG #FLG0103
+L kimchi-gps-lid-rescue:PWR_FLAG-power #FLG0103
 U 1 1 5E5F4DE1
 P 11250 2750
 F 0 "#FLG0103" H 11250 2825 50  0001 C CNN
@@ -588,7 +587,7 @@ $EndComp
 Wire Wire Line
 	11250 2750 10800 2750
 $Comp
-L Mechanical:MountingHole_Pad H1
+L kimchi-gps-lid-rescue:MountingHole_Pad-Mechanical H1
 U 1 1 5E6294CA
 P 14250 1000
 F 0 "H1" H 14350 1049 50  0000 L CNN
@@ -599,7 +598,7 @@ F 3 "~" H 14250 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H3
+L kimchi-gps-lid-rescue:MountingHole_Pad-Mechanical H3
 U 1 1 5E62A27E
 P 14250 1500
 F 0 "H3" H 14350 1549 50  0000 L CNN
@@ -610,7 +609,7 @@ F 3 "~" H 14250 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H2
+L kimchi-gps-lid-rescue:MountingHole_Pad-Mechanical H2
 U 1 1 5E62A6D2
 P 15350 1000
 F 0 "H2" H 15450 1049 50  0000 L CNN
@@ -621,7 +620,7 @@ F 3 "~" H 15350 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H4
+L kimchi-gps-lid-rescue:MountingHole_Pad-Mechanical H4
 U 1 1 5E62AAC7
 P 15350 1500
 F 0 "H4" H 15450 1549 50  0000 L CNN
@@ -632,7 +631,7 @@ F 3 "~" H 15350 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0108
+L kimchi-gps-lid-rescue:GND-power #PWR0108
 U 1 1 5E62AE37
 P 14250 1100
 F 0 "#PWR0108" H 14250 850 50  0001 C CNN
@@ -643,7 +642,7 @@ F 3 "" H 14250 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0109
+L kimchi-gps-lid-rescue:GND-power #PWR0109
 U 1 1 5E62F6CE
 P 14250 1600
 F 0 "#PWR0109" H 14250 1350 50  0001 C CNN
@@ -654,7 +653,7 @@ F 3 "" H 14250 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0110
+L kimchi-gps-lid-rescue:GND-power #PWR0110
 U 1 1 5E62F90F
 P 15350 1100
 F 0 "#PWR0110" H 15350 850 50  0001 C CNN
@@ -665,7 +664,7 @@ F 3 "" H 15350 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0111
+L kimchi-gps-lid-rescue:GND-power #PWR0111
 U 1 1 5E6301E3
 P 15350 1600
 F 0 "#PWR0111" H 15350 1350 50  0001 C CNN
@@ -676,7 +675,7 @@ F 3 "" H 15350 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L kimchi_ulid:VDD_3V3 #PWR0112
+L kimchi-gps-lid-rescue:VDD_3V3-kimchi_ulid #PWR0112
 U 1 1 5E5E1B2B
 P 1500 1000
 F 0 "#PWR0112" H 1500 850 50  0001 C CNN
@@ -687,7 +686,7 @@ F 3 "" H 1500 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L kimchi_ulid:VDD_3V3 #PWR0113
+L kimchi-gps-lid-rescue:VDD_3V3-kimchi_ulid #PWR0113
 U 1 1 5E5E1EC4
 P 1050 1300
 F 0 "#PWR0113" H 1050 1150 50  0001 C CNN
@@ -697,4 +696,568 @@ F 3 "" H 1050 1300 50  0001 C CNN
 	1    1050 1300
 	1    0    0    -1  
 $EndComp
+$Comp
+L L80RE-M37:L80RE-M37 U2
+U 1 1 5FEF6565
+P 5000 5850
+F 0 "U2" H 5000 6617 50  0000 C CNN
+F 1 "L80RE-M37" H 5000 6526 50  0000 C CNN
+F 2 "XCVR_L80RE-M37" H 5000 5850 50  0001 L BNN
+F 3 "" H 5000 5850 50  0001 L BNN
+F 4 "Quectel" H 5000 5850 50  0001 L BNN "MF"
+F 5 "L80 is an ultra compact GPS POT _Patch on Top_ module with an embedded 15.0mm × 15.0mm × 4.0mm patch antenna." H 5000 5850 50  0001 L BNN "DESCRIPTION"
+F 6 "L80" H 5000 5850 50  0001 L BNN "MP"
+F 7 "None" H 5000 5850 50  0001 L BNN "PRICE"
+F 8 "Radial Can  Quectel" H 5000 5850 50  0001 L BNN "PACKAGE"
+F 9 "Unavailable" H 5000 5850 50  0001 L BNN "AVAILABILITY"
+	1    5000 5850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L TXS0104ED:TXS0104ED U3
+U 1 1 5FEF88A0
+P 9150 5700
+F 0 "U3" H 9150 6470 50  0000 C CNN
+F 1 "TXS0104ED" H 9150 6379 50  0000 C CNN
+F 2 "SOIC127P600X175-14N" H 9150 5700 50  0001 L BNN
+F 3 "" H 9150 5700 50  0001 L BNN
+	1    9150 5700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L kimchi-gps-lid-rescue:GND-power #PWR0114
+U 1 1 5FEFA114
+P 8250 6350
+F 0 "#PWR0114" H 8250 6100 50  0001 C CNN
+F 1 "GND-power" H 8255 6177 50  0000 C CNN
+F 2 "" H 8250 6350 50  0001 C CNN
+F 3 "" H 8250 6350 50  0001 C CNN
+	1    8250 6350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 6200 8250 6200
+Wire Wire Line
+	8250 6200 8250 6350
+$Comp
+L kimchi-gps-lid-rescue:GND-power #PWR0115
+U 1 1 5FF00B88
+P 4150 6550
+F 0 "#PWR0115" H 4150 6300 50  0001 C CNN
+F 1 "GND-power" H 4155 6377 50  0000 C CNN
+F 2 "" H 4150 6550 50  0001 C CNN
+F 3 "" H 4150 6550 50  0001 C CNN
+	1    4150 6550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 6350 4150 6350
+Wire Wire Line
+	4150 6350 4150 6550
+Wire Wire Line
+	4300 5350 3900 5350
+NoConn ~ 5700 5850
+NoConn ~ 4300 6050
+NoConn ~ 4300 5850
+$Comp
+L kimchi-gps-lid:VDD_3V3 #PWR0116
+U 1 1 5FF0C9B1
+P 3900 5350
+F 0 "#PWR0116" H 3900 5200 50  0001 C CNN
+F 1 "VDD_3V3" H 3915 5523 50  0000 C CNN
+F 2 "" H 3900 5350 50  0001 C CNN
+F 3 "" H 3900 5350 50  0001 C CNN
+	1    3900 5350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L kimchi-gps-lid:VDD_1V8 #PWR0117
+U 1 1 5FF1393C
+P 8150 5150
+F 0 "#PWR0117" H 8150 5000 50  0001 C CNN
+F 1 "VDD_1V8" H 8165 5323 50  0000 C CNN
+F 2 "" H 8150 5150 50  0001 C CNN
+F 3 "" H 8150 5150 50  0001 C CNN
+	1    8150 5150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 5200 8150 5200
+Wire Wire Line
+	8150 5200 8150 5150
+$Comp
+L kimchi-gps-lid:VDD_3V3 #PWR0118
+U 1 1 5FF17449
+P 7750 5150
+F 0 "#PWR0118" H 7750 5000 50  0001 C CNN
+F 1 "VDD_3V3" H 7765 5323 50  0000 C CNN
+F 2 "" H 7750 5150 50  0001 C CNN
+F 3 "" H 7750 5150 50  0001 C CNN
+	1    7750 5150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 5300 7750 5300
+Wire Wire Line
+	7750 5300 7750 5150
+$Comp
+L DTC143ZEBTL:DTC143ZEBTL Q2
+U 1 1 5FF1FBEC
+P 5350 8800
+F 0 "Q2" H 5494 8846 50  0000 L CNN
+F 1 "DTC143ZEBTL" H 5494 8755 50  0000 L CNN
+F 2 "SOTFL50P160X85-3N" H 5350 8800 50  0001 L BNN
+F 3 "" H 5350 8800 50  0001 L BNN
+F 4 "ROHM" H 5350 8800 50  0001 L BNN "MANUFACTURER"
+F 5 "004" H 5350 8800 50  0001 L BNN "PARTREV"
+F 6 "0.85mm" H 5350 8800 50  0001 L BNN "MAXIMUM_PACKAGE_HIEGHT"
+F 7 "IPC-7351B" H 5350 8800 50  0001 L BNN "STANDARD"
+	1    5350 8800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L DTC143ZEBTL:DTC143ZEBTL Q1
+U 1 1 5FF28778
+P 3550 8750
+F 0 "Q1" H 3694 8796 50  0000 L CNN
+F 1 "DTC143ZEBTL" H 3694 8705 50  0000 L CNN
+F 2 "SOTFL50P160X85-3N" H 3550 8750 50  0001 L BNN
+F 3 "" H 3550 8750 50  0001 L BNN
+F 4 "ROHM" H 3550 8750 50  0001 L BNN "MANUFACTURER"
+F 5 "004" H 3550 8750 50  0001 L BNN "PARTREV"
+F 6 "0.85mm" H 3550 8750 50  0001 L BNN "MAXIMUM_PACKAGE_HIEGHT"
+F 7 "IPC-7351B" H 3550 8750 50  0001 L BNN "STANDARD"
+	1    3550 8750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 5500 7150 5500
+Wire Wire Line
+	7250 5600 8450 5600
+Text GLabel 10100 5600 2    50   Input ~ 0
+UART3_RX
+Text Label 7650 5500 0    50   ~ 0
+RXD1
+Text Label 7650 5600 0    50   ~ 0
+TXD1
+$Comp
+L kimchi-gps-lid:VDD_3V3 #PWR0119
+U 1 1 5FF4F3A8
+P 5250 7400
+F 0 "#PWR0119" H 5250 7250 50  0001 C CNN
+F 1 "VDD_3V3" H 5265 7573 50  0000 C CNN
+F 2 "" H 5250 7400 50  0001 C CNN
+F 3 "" H 5250 7400 50  0001 C CNN
+	1    5250 7400
+	1    0    0    -1  
+$EndComp
+Text GLabel 8200 5700 0    50   Output ~ 0
+RESET-GPIO
+Wire Wire Line
+	8450 5700 8200 5700
+Text GLabel 5900 5650 2    50   Input ~ 0
+RESET
+Wire Wire Line
+	5700 5650 5900 5650
+Text GLabel 3450 8200 1    50   Input ~ 0
+RESET
+$Comp
+L kimchi-gps-lid-rescue:GND-power #PWR0120
+U 1 1 5FF5BFAC
+P 3450 9250
+F 0 "#PWR0120" H 3450 9000 50  0001 C CNN
+F 1 "GND-power" H 3455 9077 50  0000 C CNN
+F 2 "" H 3450 9250 50  0001 C CNN
+F 3 "" H 3450 9250 50  0001 C CNN
+	1    3450 9250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 9250 3450 9050
+Wire Wire Line
+	3450 8450 3450 8200
+Text GLabel 4100 8750 2    50   Input ~ 0
+RESET-GPIO
+Wire Wire Line
+	3850 8750 4100 8750
+Text GLabel 4000 5650 0    50   Input ~ 0
+1PPS
+Wire Wire Line
+	4000 5650 4300 5650
+$Comp
+L kimchi-gps-lid-rescue:GND-power #PWR0121
+U 1 1 5FF6ABCD
+P 5250 9400
+F 0 "#PWR0121" H 5250 9150 50  0001 C CNN
+F 1 "GND-power" H 5255 9227 50  0000 C CNN
+F 2 "" H 5250 9400 50  0001 C CNN
+F 3 "" H 5250 9400 50  0001 C CNN
+	1    5250 9400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 9400 5250 9100
+Wire Wire Line
+	5650 8800 6000 8800
+Text GLabel 6000 8800 2    50   Input ~ 0
+1PPS
+Wire Notes Line
+	6400 7000 2300 7000
+Wire Notes Line
+	2300 4800 6400 4800
+Text Notes 4200 4900 0    50   ~ 10
+L80-R or LC86L GPS/GNSS Module\n
+Wire Notes Line
+	12650 7000 12650 4800
+Text Notes 8950 4750 0    50   ~ 10
+Level Shifter IC
+Text GLabel 10100 5500 2    50   Input ~ 0
+UART3_TX
+Wire Wire Line
+	9850 5500 10100 5500
+Wire Wire Line
+	5700 6150 7250 6150
+Wire Wire Line
+	7150 6050 5700 6050
+Wire Wire Line
+	7250 6150 7250 5600
+Wire Wire Line
+	7150 5500 7150 6050
+Wire Wire Line
+	9850 5600 10100 5600
+Text GLabel 10100 5700 2    50   Input ~ 0
+GPIO1[15]
+Wire Wire Line
+	9850 5700 10100 5700
+$Comp
+L Device:LED D1
+U 1 1 5FFBBD2E
+P 5250 8100
+F 0 "D1" V 5289 7982 50  0000 R CNN
+F 1 "LED" V 5198 7982 50  0000 R CNN
+F 2 "" H 5250 8100 50  0001 C CNN
+F 3 "~" H 5250 8100 50  0001 C CNN
+	1    5250 8100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5FFBECC6
+P 5250 7650
+F 0 "R2" H 5320 7696 50  0000 L CNN
+F 1 "R" H 5320 7605 50  0000 L CNN
+F 2 "" V 5180 7650 50  0001 C CNN
+F 3 "~" H 5250 7650 50  0001 C CNN
+	1    5250 7650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5FFC0A50
+P 10050 6200
+F 0 "R1" H 10120 6246 50  0000 L CNN
+F 1 "10K" H 10120 6155 50  0000 L CNN
+F 2 "" V 9980 6200 50  0001 C CNN
+F 3 "~" H 10050 6200 50  0001 C CNN
+	1    10050 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5FFC1AE5
+P 2600 5800
+F 0 "C4" H 2715 5846 50  0000 L CNN
+F 1 "100n" H 2715 5755 50  0000 L CNN
+F 2 "" H 2638 5650 50  0001 C CNN
+F 3 "~" H 2600 5800 50  0001 C CNN
+	1    2600 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5FFC3E9F
+P 3250 5800
+F 0 "C3" H 3365 5846 50  0000 L CNN
+F 1 "10uF" H 3365 5755 50  0000 L CNN
+F 2 "" H 3288 5650 50  0001 C CNN
+F 3 "~" H 3250 5800 50  0001 C CNN
+	1    3250 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5FFC4CEE
+P 11250 5650
+F 0 "C2" H 11365 5696 50  0000 L CNN
+F 1 "100n" H 11365 5605 50  0000 L CNN
+F 2 "" H 11288 5500 50  0001 C CNN
+F 3 "~" H 11250 5650 50  0001 C CNN
+	1    11250 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5FFC676A
+P 11800 5650
+F 0 "C1" H 11915 5696 50  0000 L CNN
+F 1 "100n" H 11915 5605 50  0000 L CNN
+F 2 "" H 11838 5500 50  0001 C CNN
+F 3 "~" H 11800 5650 50  0001 C CNN
+	1    11800 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L kimchi-gps-lid-rescue:GND-power #PWR0122
+U 1 1 5FFCDEF3
+P 2600 6100
+F 0 "#PWR0122" H 2600 5850 50  0001 C CNN
+F 1 "GND-power" H 2605 5927 50  0000 C CNN
+F 2 "" H 2600 6100 50  0001 C CNN
+F 3 "" H 2600 6100 50  0001 C CNN
+	1    2600 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L kimchi-gps-lid-rescue:GND-power #PWR0123
+U 1 1 5FFCF4C0
+P 3250 6100
+F 0 "#PWR0123" H 3250 5850 50  0001 C CNN
+F 1 "GND-power" H 3255 5927 50  0000 C CNN
+F 2 "" H 3250 6100 50  0001 C CNN
+F 3 "" H 3250 6100 50  0001 C CNN
+	1    3250 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 6100 2600 5950
+Wire Wire Line
+	3250 5950 3250 6100
+$Comp
+L kimchi-gps-lid:VDD_3V3 #PWR0124
+U 1 1 5FFD6442
+P 2600 5350
+F 0 "#PWR0124" H 2600 5200 50  0001 C CNN
+F 1 "VDD_3V3" H 2615 5523 50  0000 C CNN
+F 2 "" H 2600 5350 50  0001 C CNN
+F 3 "" H 2600 5350 50  0001 C CNN
+	1    2600 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L kimchi-gps-lid:VDD_3V3 #PWR0125
+U 1 1 5FFD723C
+P 3250 5350
+F 0 "#PWR0125" H 3250 5200 50  0001 C CNN
+F 1 "VDD_3V3" H 3265 5523 50  0000 C CNN
+F 2 "" H 3250 5350 50  0001 C CNN
+F 3 "" H 3250 5350 50  0001 C CNN
+	1    3250 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 5350 2600 5650
+Wire Wire Line
+	3250 5350 3250 5650
+Text Notes 2400 6450 0    50   ~ 0
+Place 100nF near the GPS Module
+Wire Wire Line
+	5250 7400 5250 7500
+Wire Wire Line
+	5250 7950 5250 7800
+Wire Wire Line
+	5250 8500 5250 8250
+Wire Wire Line
+	9850 5900 10050 5900
+Wire Wire Line
+	10050 5900 10050 6050
+Wire Wire Line
+	10050 5900 10350 5900
+Connection ~ 10050 5900
+Wire Notes Line
+	2300 9750 6400 9750
+Wire Notes Line
+	6400 4800 6400 9750
+Wire Notes Line
+	2300 4800 2300 9750
+Text Notes 3400 7150 0    50   ~ 10
+Reset Circuitry and LED Activity Indication
+Text Notes 5800 8500 1    50   ~ 0
+What LED Color ? \nDiscuss then size R accordingly
+$Comp
+L kimchi-gps-lid-rescue:GND-power #PWR0126
+U 1 1 6002EB6B
+P 10050 6500
+F 0 "#PWR0126" H 10050 6250 50  0001 C CNN
+F 1 "GND-power" H 10055 6327 50  0000 C CNN
+F 2 "" H 10050 6500 50  0001 C CNN
+F 3 "" H 10050 6500 50  0001 C CNN
+	1    10050 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 6500 10050 6350
+Text GLabel 4050 5450 0    50   Input ~ 0
+V_BCKP
+Wire Wire Line
+	4050 5450 4300 5450
+Wire Notes Line
+	7250 4800 12650 4800
+Wire Notes Line
+	7250 7000 12650 7000
+$Comp
+L kimchi-gps-lid:VDD_1V8 #PWR0127
+U 1 1 600506C7
+P 11250 5350
+F 0 "#PWR0127" H 11250 5200 50  0001 C CNN
+F 1 "VDD_1V8" H 11265 5523 50  0000 C CNN
+F 2 "" H 11250 5350 50  0001 C CNN
+F 3 "" H 11250 5350 50  0001 C CNN
+	1    11250 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L kimchi-gps-lid:VDD_3V3 #PWR0128
+U 1 1 60051A84
+P 11800 5350
+F 0 "#PWR0128" H 11800 5200 50  0001 C CNN
+F 1 "VDD_3V3" H 11815 5523 50  0000 C CNN
+F 2 "" H 11800 5350 50  0001 C CNN
+F 3 "" H 11800 5350 50  0001 C CNN
+	1    11800 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11250 5500 11250 5350
+Wire Wire Line
+	11800 5500 11800 5350
+Wire Wire Line
+	11250 5800 11250 5950
+Wire Wire Line
+	11800 5800 11800 5950
+$Comp
+L kimchi-gps-lid-rescue:GND-power #PWR0129
+U 1 1 60061137
+P 11250 5950
+F 0 "#PWR0129" H 11250 5700 50  0001 C CNN
+F 1 "GND-power" H 11255 5777 50  0000 C CNN
+F 2 "" H 11250 5950 50  0001 C CNN
+F 3 "" H 11250 5950 50  0001 C CNN
+	1    11250 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L kimchi-gps-lid-rescue:GND-power #PWR0130
+U 1 1 60062566
+P 11800 5950
+F 0 "#PWR0130" H 11800 5700 50  0001 C CNN
+F 1 "GND-power" H 11805 5777 50  0000 C CNN
+F 2 "" H 11800 5950 50  0001 C CNN
+F 3 "" H 11800 5950 50  0001 C CNN
+	1    11800 5950
+	1    0    0    -1  
+$EndComp
+Text Notes 10850 6350 0    50   ~ 0
+Place Capacitors close to the Level Shifter \n
+Text GLabel 10350 5900 2    50   Input ~ 0
+GPIO1[14]
+$Comp
+L BAT-HLD-012-SMT:BAT-HLD-012-SMT BT1
+U 1 1 6006B81A
+P 9150 8150
+F 0 "BT1" V 9104 8280 50  0000 L CNN
+F 1 "BAT-HLD-012-SMT" V 9195 8280 50  0000 L CNN
+F 2 "BAT_BAT-HLD-012-SMT" H 9150 8150 50  0001 L BNN
+F 3 "" H 9150 8150 50  0001 L BNN
+F 4 "A" H 9150 8150 50  0001 L BNN "PARTREV"
+F 5 "Linx Technologies" H 9150 8150 50  0001 L BNN "MANUFACTURER"
+F 6 "Manufacturer Recommendations" H 9150 8150 50  0001 L BNN "STANDARD"
+	1    9150 8150
+	0    1    1    0   
+$EndComp
+$Comp
+L kimchi-gps-lid-rescue:GND-power #PWR0131
+U 1 1 6007568F
+P 9150 8600
+F 0 "#PWR0131" H 9150 8350 50  0001 C CNN
+F 1 "GND-power" H 9155 8427 50  0000 C CNN
+F 2 "" H 9150 8600 50  0001 C CNN
+F 3 "" H 9150 8600 50  0001 C CNN
+	1    9150 8600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 7900 9150 7850
+Text GLabel 9150 7650 0    50   UnSpc ~ 0
+V_BCKP
+$Comp
+L Device:C C5
+U 1 1 600945E0
+P 8200 8150
+F 0 "C5" H 8315 8196 50  0000 L CNN
+F 1 "4,7uF" H 8315 8105 50  0000 L CNN
+F 2 "" H 8238 8000 50  0001 C CNN
+F 3 "~" H 8200 8150 50  0001 C CNN
+	1    8200 8150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 6009596C
+P 8700 8150
+F 0 "C6" H 8815 8196 50  0000 L CNN
+F 1 "100n" H 8815 8105 50  0000 L CNN
+F 2 "" H 8738 8000 50  0001 C CNN
+F 3 "~" H 8700 8150 50  0001 C CNN
+	1    8700 8150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 8300 8200 8600
+Wire Wire Line
+	8700 8300 8700 8600
+Wire Wire Line
+	8200 8000 8200 7650
+Wire Wire Line
+	8700 8000 8700 7650
+$Comp
+L kimchi-gps-lid-rescue:GND-power #PWR0132
+U 1 1 600A697A
+P 8200 8600
+F 0 "#PWR0132" H 8200 8350 50  0001 C CNN
+F 1 "GND-power" H 8205 8427 50  0000 C CNN
+F 2 "" H 8200 8600 50  0001 C CNN
+F 3 "" H 8200 8600 50  0001 C CNN
+	1    8200 8600
+	1    0    0    -1  
+$EndComp
+$Comp
+L kimchi-gps-lid-rescue:GND-power #PWR0133
+U 1 1 600A7994
+P 8700 8600
+F 0 "#PWR0133" H 8700 8350 50  0001 C CNN
+F 1 "GND-power" H 8705 8427 50  0000 C CNN
+F 2 "" H 8700 8600 50  0001 C CNN
+F 3 "" H 8700 8600 50  0001 C CNN
+	1    8700 8600
+	1    0    0    -1  
+$EndComp
+Text GLabel 8200 7650 0    50   UnSpc ~ 0
+V_BCKP
+Text GLabel 8700 7650 0    50   UnSpc ~ 0
+V_BCKP
+Connection ~ 9150 7850
+Wire Wire Line
+	9150 7850 9150 7650
+Wire Wire Line
+	9150 8450 9150 8600
+Wire Notes Line
+	7250 9050 10250 9050
+Wire Notes Line
+	10250 9050 10250 7000
+Wire Notes Line
+	7250 4800 7250 9050
+Text Notes 8500 7150 0    50   ~ 10
+Backup Battery 
+Text Notes 8000 8950 0    50   ~ 0
+Place 100n near the GPS module\n
 $EndSCHEMATC

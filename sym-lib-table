@@ -1,3 +1,9 @@
 (sym_lib_table
   (lib (name kimchi_ulid)(type Legacy)(uri ${KIPRJMOD}/kimchi_ulid.lib)(options "")(descr ""))
+  (lib (name kimchi-gps-lid-rescue)(type Legacy)(uri ${KIPRJMOD}/kimchi-gps-lid-rescue.lib)(options "")(descr ""))
+  (lib (name L80RE-M37)(type Legacy)(uri ${KIPRJMOD}/gps-libaries/L80RE-M37.lib)(options "")(descr ""))
+  (lib (name TXS0104ED)(type Legacy)(uri ${KIPRJMOD}/gps-libaries/TXS0104ED.lib)(options "")(descr ""))
+  (lib (name DTC143ZEBTL)(type Legacy)(uri ${KIPRJMOD}/gps-libaries/DTC143ZEBTL.lib)(options "")(descr ""))
+  (lib (name kimchi-gps-lid)(type Legacy)(uri ${KIPRJMOD}/kimchi-gps-lid.lib)(options "")(descr ""))
+  (lib (name BAT-HLD-012-SMT)(type Legacy)(uri ${KIPRJMOD}/gps-libaries/BAT-HLD-012-SMT.lib)(options "")(descr ""))
 )
