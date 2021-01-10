@@ -830,15 +830,11 @@ F 7 "IPC-7351B" H 3550 8750 50  0001 L BNN "STANDARD"
 	1    3550 8750
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	8450 5500 7150 5500
-Wire Wire Line
-	7250 5600 8450 5600
-Text GLabel 10100 5600 2    50   Input ~ 0
+Text GLabel 10100 5700 2    50   Input ~ 0
 UART3_RX
-Text Label 7650 5500 0    50   ~ 0
+Text Label 8250 5600 0    50   ~ 0
 RXD1
-Text Label 7650 5600 0    50   ~ 0
+Text Label 8250 5700 0    50   ~ 0
 TXD1
 $Comp
 L kimchi-gps-lid:VDD_3V3 #PWR0119
@@ -851,10 +847,10 @@ F 3 "" H 5250 7400 50  0001 C CNN
 	1    5250 7400
 	1    0    0    -1  
 $EndComp
-Text GLabel 8200 5700 0    50   Output ~ 0
+Text GLabel 8200 5500 0    50   Output ~ 0
 RESET-GPIO
 Wire Wire Line
-	8450 5700 8200 5700
+	8450 5500 8200 5500
 Text GLabel 5900 5650 2    50   Input ~ 0
 RESET
 Wire Wire Line
@@ -911,7 +907,7 @@ Wire Notes Line
 	12650 7000 12650 4800
 Text Notes 8950 4750 0    50   ~ 10
 Level Shifter IC
-Text GLabel 10100 5500 2    50   Input ~ 0
+Text GLabel 10100 5600 2    50   Input ~ 0
 UART3_TX
 Wire Wire Line
 	9850 5500 10100 5500
@@ -920,12 +916,8 @@ Wire Wire Line
 Wire Wire Line
 	7150 6050 5700 6050
 Wire Wire Line
-	7250 6150 7250 5600
-Wire Wire Line
-	7150 5500 7150 6050
-Wire Wire Line
 	9850 5600 10100 5600
-Text GLabel 10100 5700 2    50   Input ~ 0
+Text GLabel 10100 5500 2    50   Input ~ 0
 GPIO1[15]
 Wire Wire Line
 	9850 5700 10100 5700
@@ -1260,4 +1252,12 @@ Text Notes 8500 7150 0    50   ~ 10
 Backup Battery 
 Text Notes 8000 8950 0    50   ~ 0
 Place 100n near the GPS module\n
+Wire Wire Line
+	7150 5600 7150 6050
+Wire Wire Line
+	7150 5600 8450 5600
+Wire Wire Line
+	7250 6150 7250 5700
+Wire Wire Line
+	7250 5700 8450 5700
 $EndSCHEMATC
